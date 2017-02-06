@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffbb33</color>
+    <color name="colorPrimaryDark">#ffac33</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rippleDefaultColor">#4f000000</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="sign_bt_enable">#ff6600</color>
+    <color name="sign_bt_dis_able">#f5f5f5</color>
+    <color name="sign_bt_line">#bbbbbb</color>
+
+    <color name="text_blue_color">#4E85DB</color>
+    <color name="text_red_color">#FF0000</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_gray_color">#bbbbbb</color>
+
+    <color name="highlight">#FF4081</color>
+    <color name="red">#e6162d</color>
+    <color name="blue">#3e96d6</color>
+    <color name="green">#44b549</color>
+
+    <color name="item_un_click">#1f000000</color>
+
+    <color name="item_light_background">#fff</color>
+    <color name="white">#fff</color>
+
+    <color name="background_color">#F6F6F8</color>
+    <color name="line_color">#eaeaea</color>
+    <color name="click_pressed_color">#22000000</color>
+</resources>

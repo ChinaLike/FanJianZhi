@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="comment_info_h">120dp</dimen>
+
+    <dimen name="item_divider">1dp</dimen>
+    <dimen name="img_text_h">85dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="content_item_h">48dp</dimen>
+    <dimen name="img_h_24">24dp</dimen>
+
+    <dimen name="bt_h_50">50dp</dimen>
+    <dimen name="bt_h_48">48dp</dimen>
+    <dimen name="bt_h_40">40dp</dimen>
+    <dimen name="guide_vp_h">400dp</dimen>
+
+    <dimen name="text_Increase_larger">18sp</dimen>
+    <dimen name="text_larger">16sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_mini">12sp</dimen>
+    <dimen name="text_least_mini">10sp</dimen>
+
+    <dimen name="dialog_title">50dp</dimen>
+    <dimen name="dialog_mini_width">320dp</dimen>
+    <dimen name="banner_height">144dp</dimen>
+</resources>

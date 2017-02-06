@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.lyy.ui.widget.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/bt_h_40"
+                android:layout_height="@dimen/bt_h_40"
+                android:src="@mipmap/icon_def_icon" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_toRightOf="@+id/img"
+                android:text="用户名"
+                android:textColor="@drawable/selector_blue_gray_text_bg"
+                android:textSize="@dimen/text_larger" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_name"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="@dimen/margin_4"
+                android:text="2016-11-26"
+                android:textColor="@color/text_gray_color"
+                android:textSize="@dimen/text_mini" />
+
+            <ImageView
+                android:id="@+id/bt"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_bar_bt_bg"
+                android:src="@mipmap/icon_reply"
+                android:text="回复"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_h_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_8"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="我的内容"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_larger" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/replay"
+            android:layout_marginTop="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/text_medium" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>

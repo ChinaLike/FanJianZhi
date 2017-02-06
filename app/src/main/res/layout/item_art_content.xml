@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/margin_16">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="我妈就这样"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/margin_4"
+            android:text="2016"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/time"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_toRightOf="@+id/time"
+            android:text="分类"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/scan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/time"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_toRightOf="@+id/classify"
+            android:text="浏览数"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:background="#F5F5F5"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_8">
+
+        <com.lyy.ui.widget.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_def_icon" />
+
+        <TextView
+            android:id="@+id/nike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_toRightOf="@+id/img"
+            android:text="昵称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_larger" />
+
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nike_name"
+            android:layout_below="@+id/nike_name"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_toLeftOf="@+id/follow"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="签名"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/text_medium" />
+
+        <Button
+            android:id="@+id/follow"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_yellow_code_bt"
+            android:text="+关注"
+            android:textColor="@drawable/selector_yellow_code_bt_text" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl1"
+        android:background="@color/line_color" />
+
+
+    <com.lyy.ui.rich_text.RichText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/text_black_color"
+        app:rt_error_img="@mipmap/icon_def_banner"
+        app:rt_place_holder="@mipmap/icon_def_banner" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@color/line_color" />
+
+    <com.lyy.ui.widget.IconText
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:drawableLeft="@mipmap/icon_star"
+        android:drawablePadding="@dimen/margin_4"
+        android:gravity="center"
+        android:text="999"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_medium"
+        app:icon_h="20dp"
+        app:icon_w="20dp" />
+
+    <com.lyy.ui.widget.IconText
+        android:id="@+id/un_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/star"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_toRightOf="@+id/star"
+        android:drawableLeft="@mipmap/icon_stared"
+        android:drawablePadding="@dimen/margin_4"
+        android:gravity="center"
+        android:text="999"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_medium"
+        app:icon_h="20dp"
+        app:icon_w="20dp" />
+
+    <TextView
+        android:id="@+id/complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="投诉"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/text_medium" />
+
+</RelativeLayout>

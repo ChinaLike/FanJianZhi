@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_bg"
+        android:minWidth="@dimen/dialog_mini_width"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/margin_8"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="内容投诉"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_larger" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_16">
+
+            <RadioButton
+                style="@style/ComplainedRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="内容违规：存在色情、暴力、反动等内容" />
+
+            <RadioButton
+                style="@style/ComplainedRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="内容侵权：涉及侵犯他人版权" />
+
+            <RadioButton
+                style="@style/ComplainedRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:text="恶意广告：有未明确标注的商业推广行为" />
+
+            <RadioButton
+                style="@style/ComplainedRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="4"
+                android:text="其它问题" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_larger" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/line_color" />
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_larger" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

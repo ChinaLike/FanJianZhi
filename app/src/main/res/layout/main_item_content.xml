@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sign_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_16"
+        android:background="@drawable/selector_sign_bt">
+
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="每日签到"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <RelativeLayout
+            android:id="@+id/signed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:text="今日已签到"
+                android:textColor="@color/sign_bt_line"
+                android:textSize="@dimen/text_Increase_larger" />
+
+            <TextView
+                android:id="@+id/sign_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_toRightOf="@+id/tx"
+                android:text="已签到"
+                android:textColor="@color/sign_bt_line"
+                android:textSize="@dimen/text_mini" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_msg" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/img1"
+            android:text="消息"
+            android:textSize="@dimen/text_larger" />
+
+        <com.lyy.ui.widget.RedDotLayout
+            android:id="@+id/redDot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-16dp"
+            android:layout_toRightOf="@+id/text"
+            android:visibility="gone"
+            app:rd_radius="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_item_h"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_collect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/img2"
+            android:text="收藏"
+            android:textSize="@dimen/text_larger" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_item_h"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16">
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@+id/img3"
+            android:text="设置与帮助"
+            android:textSize="@dimen/text_larger" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eaeaea"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/margin_8"
+    android:paddingTop="@dimen/margin_16"
+    android:text="点击查看所有评论"
+    android:textColor="@drawable/selector_blue_gray_text_bg"
+    android:textSize="@dimen/text_larger" />

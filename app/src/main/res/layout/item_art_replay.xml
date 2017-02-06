@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/margin_8">
+
+    <com.lyy.ui.widget.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/margin_32"
+        android:layout_height="@dimen/margin_32"
+        android:src="@mipmap/icon_def_icon" />
+
+    <TextView
+        android:id="@+id/nike_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_toRightOf="@+id/img"
+        android:ellipsize="end"
+        android:maxLength="12"
+        android:text="昵称11111111111111111111111111111111111111111"
+        android:textColor="@drawable/selector_gray_gray"
+        android:textSize="@dimen/text_larger" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nike_name"
+        android:layout_below="@+id/nike_name"
+        android:text="2016"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/text_mini" />
+
+    <TextView
+        android:id="@+id/leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nike_name"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/margin_4"
+        android:layout_toRightOf="@+id/nike_name"
+        android:background="@drawable/shape_art_cm_leave"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_4"
+        android:paddingRight="@dimen/margin_4"
+        android:text="8.0cm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_least_mini" />
+
+    <com.lyy.ui.widget.IconText
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@mipmap/icon_star"
+        android:text="999"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/text_medium"
+        app:icon_h="@dimen/margin_16"
+        app:icon_w="@dimen/margin_16" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nike_name"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="@dimen/margin_4"
+        android:text="这里是评论内容"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/text_larger" />
+
+    <View
+        android:id="@+id/replay_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

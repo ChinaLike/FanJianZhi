@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <com.lyy.ui.pulltorefresh.xrecyclerview.XRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有任何评论，赶快来抢沙发吧~~"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/text_Increase_larger"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_alignParentBottom="true"
+            android:background="#FBFBFB">
+
+            <EditText
+                android:id="@+id/replay_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_32"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_toLeftOf="@+id/commit"
+                android:background="@drawable/icon_et_shap"
+                android:gravity="center|left"
+                android:hint="我来说两句"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_8"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_larger" />
+
+            <ImageView
+                android:id="@+id/commit"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="@drawable/selector_bar_transparent"
+                android:src="@mipmap/icon_reply" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

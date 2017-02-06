@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="FJZ" />
+    <version value="2" />
+
+    <list>
+        <mapping class="com.touchrom.fanjianzhi.entity.sql.SearchHistoryEntity" />
+        <mapping class="com.touchrom.fanjianzhi.entity.sql.LargeImgInfoEntity" />
+    </list>
+
+</litepal>

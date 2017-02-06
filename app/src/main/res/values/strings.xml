@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">犯贱志</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="about_title">
+        <item>官方网站</item>
+        <item>新浪微博</item>
+        <item>贱友QQ壹群</item>
+        <item>贱友QQ贰群</item>
+        <item>免责声明</item>
+    </string-array>
+
+    <string-array name="about_detail">
+        <item>www.fanjian.net</item>
+        <item>\@犯贱志</item>
+        <item>477476620</item>
+        <item>557914990</item>
+        <item></item>
+    </string-array>
+
+</resources>

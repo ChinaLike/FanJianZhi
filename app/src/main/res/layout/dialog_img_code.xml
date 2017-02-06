@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_bg">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16"
+            android:text="请输入图片验证码"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_16"
+            android:text="验证码错误"
+            android:textColor="@color/text_red_color"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title"
+            android:background="@color/line_color" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:maxWidth="120dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="换一张"
+            android:textColor="@drawable/selector_blue_gray_text_bg"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <EditText
+            android:textColor="@color/text_black_color"
+            android:id="@+id/img_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_below="@+id/img"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/icon_et_shap"
+            android:hint="请输入图片中显示的内容"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16" />
+
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/img_code_et"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_below="@+id/line_1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_black_color"
+                android:textSize="@dimen/text_larger" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/line_color" />
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_larger" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

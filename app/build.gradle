@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.fjz.app"
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 11
+        versionName "v_1.0"
+    }
+
+    signingConfigs {
+//        debug {
+//            storeFile file("E:/keystore/SDK.jks")
+//        }
+        relealse {
+//            storeFile file('E:/keystore/GaoShouYou.jks')
+//            storePassword 'laoyuyu789'
+//            keyAlias 'gaoshouyou'
+//            keyPassword '860536017'
+
+            storeFile file('E:/keystore/fjz.keyStore')
+            storePassword 'fanjianz'
+            keyAlias 'fjz'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            signingConfig signingConfigs.relealse
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.arialyy.absadapter:AbsAdapter:1.0.1'
+    compile 'com.arialyy.downloadutil:DownloadUtil:1.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'io.reactivex:rxjava:1.0.16'
+    compile 'org.litepal.android:core:1.3.2'
+    compile project(':ui')
+    compile files('libs/MobCommons.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-QQ-2.6.5.jar')
+    compile files('libs/ShareSDK-Core-2.6.5.jar')
+    compile files('libs/ShareSDK-QZone-2.6.5.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.5.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.5.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.5.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.5.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.5.jar')
+    compile project(':frame')
+}

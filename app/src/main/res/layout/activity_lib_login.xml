@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_bar" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:src="@mipmap/icon_logion_logo" />
+
+        <TextView
+            android:id="@+id/right_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bar_bt_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16"
+            android:text="使用账号登录"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/weibo_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_below="@+id/img"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_32"
+            android:background="@drawable/bt_red_shape"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="微博登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_larger" />
+
+        <ImageView
+            android:id="@+id/weibo_img"
+            android:layout_width="@dimen/img_h_24"
+            android:layout_height="@dimen/img_h_24"
+            android:layout_alignLeft="@+id/weibo_login"
+            android:layout_alignTop="@+id/weibo_login"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/icon_lib_weibo" />
+
+        <Button
+            android:id="@+id/qq_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_below="@+id/weibo_login"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/bt_blue_shape"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="QQ登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_larger" />
+
+        <ImageView
+            android:id="@+id/qq_img"
+            android:layout_width="@dimen/img_h_24"
+            android:layout_height="@dimen/img_h_24"
+            android:layout_alignLeft="@+id/qq_login"
+            android:layout_alignTop="@+id/qq_login"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/icon_lib_qq" />
+
+        <Button
+            android:id="@+id/wx_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h_48"
+            android:layout_below="@+id/qq_login"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/bt_green_shape"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="QQ登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_larger" />
+
+        <ImageView
+            android:id="@+id/wx_img"
+            android:layout_width="@dimen/img_h_24"
+            android:layout_height="@dimen/img_h_24"
+            android:layout_alignLeft="@+id/wx_login"
+            android:layout_alignTop="@+id/wx_login"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/icon_lib_wx" />
+
+
+    </RelativeLayout>
+</layout>

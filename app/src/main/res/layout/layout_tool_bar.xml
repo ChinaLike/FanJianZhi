@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_4"
+        android:paddingRight="@dimen/margin_4">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_user"
+            android:src="@mipmap/icon_logo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_menu"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_bar_bt_bg"
+            android:src="@mipmap/icon_menu"
+            android:visibility="gone" />
+
+        <com.lyy.ui.widget.CircleImageView
+            android:id="@+id/icon_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon_menu"
+            android:src="@mipmap/icon_def_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/margin_48"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_bar_bt_bg"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back"
+            android:text="犯贱"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_Increase_larger" />
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="@dimen/margin_48"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bar_bt_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

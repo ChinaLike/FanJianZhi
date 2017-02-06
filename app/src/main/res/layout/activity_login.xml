@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_bar" />
+
+        <TextView
+            android:id="@+id/right_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bar_bt_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16"
+            android:text="其它方式登录"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_16"
+            android:paddingLeft="@dimen/margin_32"
+            android:paddingRight="@dimen/margin_32"
+            android:paddingTop="@dimen/margin_16">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_logion_logo" />
+
+            <com.lyy.ui.widget.IconEditText
+                android:id="@+id/account"
+                style="@style/LoginEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:drawableLeft="@mipmap/icon_user_def"
+                android:hint="用户名\\手机号\\邮箱" />
+
+
+            <com.lyy.ui.widget.IconEditText
+                android:id="@+id/password"
+                style="@style/LoginEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:drawableLeft="@mipmap/icon_pw_def"
+                android:hint="密码"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_yellow_bt"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_larger" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/forget_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll"
+            android:layout_marginRight="@dimen/margin_32"
+            android:text="忘记密码？"
+            android:textColor="@drawable/selector_blue_gray_text_bg"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:text="不贱不要注册"
+            android:textColor="@drawable/selector_blue_gray_text_bg"
+            android:textSize="@dimen/text_medium" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_bar" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="完善注册信息"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/text_larger" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginRight="@dimen/margin_32"
+            android:orientation="vertical">
+
+            <com.lyy.ui.widget.IconEditText
+                android:id="@+id/nike_name"
+                style="@style/LoginEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:drawableLeft="@mipmap/icon_nike_name_def"
+                android:hint="请设置2-10字符长度的昵称" />
+
+            <com.lyy.ui.widget.IconEditText
+                android:id="@+id/password"
+                style="@style/LoginEt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:drawableLeft="@mipmap/icon_pw_def"
+                android:hint="请设置登录密码，6-20个字符"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/final_reg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_h_48"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_yellow_bt"
+                android:gravity="center"
+                android:text="完成注册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_larger" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
